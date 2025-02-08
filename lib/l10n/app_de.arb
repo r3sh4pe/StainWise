@@ -1,6 +1,5 @@
 {
   "appTitle": "Belastungsmonitor",
-
   "@appTitle": {
     "description": "The application's name"
   },
@@ -30,6 +29,11 @@
     "description": "Label for skill description input"
   },
 
+  "skills": "Fähigkeiten",
+  "@skills": {
+    "description": "Label for skills section"
+  },
+
   "symptomName": "Symptomname",
   "@symptomName": {
     "description": "Label for symptom name input"
@@ -38,6 +42,11 @@
   "symptomDescription": "Beschreibung",
   "@symptomDescription": {
     "description": "Label for symptom description input"
+  },
+
+  "symptoms": "Symptome",
+  "@symptoms": {
+    "description": "Label for symptoms section"
   },
 
   "rateSkill": "Fähigkeit bewerten",

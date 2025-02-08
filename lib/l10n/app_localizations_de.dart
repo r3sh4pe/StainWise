@@ -25,10 +25,16 @@ class AppLocalizationsDe extends AppLocalizations {
   String get skillDescription => 'Beschreibung';
 
   @override
+  String get skills => 'Fähigkeiten';
+
+  @override
   String get symptomName => 'Symptomname';
 
   @override
   String get symptomDescription => 'Beschreibung';
+
+  @override
+  String get symptoms => 'Symptome';
 
   @override
   String get rateSkill => 'Fähigkeit bewerten';

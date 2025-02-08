@@ -131,6 +131,12 @@ abstract class AppLocalizations {
   /// **'Description'**
   String get skillDescription;
 
+  /// Label for skills section
+  ///
+  /// In en, this message translates to:
+  /// **'Skills'**
+  String get skills;
+
   /// Label for symptom name input
   ///
   /// In en, this message translates to:
@@ -142,6 +148,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Description'**
   String get symptomDescription;
+
+  /// Label for symptoms section
+  ///
+  /// In en, this message translates to:
+  /// **'Symptoms'**
+  String get symptoms;
 
   /// Button to rate a skill
   ///

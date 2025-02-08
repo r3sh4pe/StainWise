@@ -1,6 +1,5 @@
 {
   "appTitle": "Strain Monitor",
-
   "@appTitle": {
     "description": "The application's name"
   },
@@ -30,6 +29,11 @@
     "description": "Label for skill description input"
   },
 
+  "skills": "Skills",
+  "@skills": {
+    "description": "Label for skills section"
+  },
+
   "symptomName": "Symptom Name",
   "@symptomName": {
     "description": "Label for symptom name input"
@@ -38,6 +42,11 @@
   "symptomDescription": "Description",
   "@symptomDescription": {
     "description": "Label for symptom description input"
+  },
+
+  "symptoms": "Symptoms",
+  "@symptoms": {
+    "description": "Label for symptoms section"
   },
 
   "rateSkill": "Rate Skill",

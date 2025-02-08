@@ -25,10 +25,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get skillDescription => 'Description';
 
   @override
+  String get skills => 'Skills';
+
+  @override
   String get symptomName => 'Symptom Name';
 
   @override
   String get symptomDescription => 'Description';
+
+  @override
+  String get symptoms => 'Symptoms';
 
   @override
   String get rateSkill => 'Rate Skill';
