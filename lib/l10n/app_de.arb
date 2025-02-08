@@ -1,0 +1,77 @@
+{
+  "appTitle": "Belastungsmonitor",
+
+  "@appTitle": {
+    "description": "The application's name"
+  },
+
+  "strainLevel": "Belastungsniveau",
+  "@strainLevel": {
+    "description": "Label for strain level input"
+  },
+
+  "strainNote": "Notiz",
+  "@strainNote": {
+    "description": "Label for optional note input"
+  },
+
+  "createEntry": "Eintrag erstellen",
+  "@createEntry": {
+    "description": "Button to create a new strain entry"
+  },
+
+  "skillName": "Fähigkeitsname",
+  "@skillName": {
+    "description": "Label for skill name input"
+  },
+
+  "skillDescription": "Beschreibung",
+  "@skillDescription": {
+    "description": "Label for skill description input"
+  },
+
+  "symptomName": "Symptomname",
+  "@symptomName": {
+    "description": "Label for symptom name input"
+  },
+
+  "symptomDescription": "Beschreibung",
+  "@symptomDescription": {
+    "description": "Label for symptom description input"
+  },
+
+  "rateSkill": "Fähigkeit bewerten",
+  "@rateSkill": {
+    "description": "Button to rate a skill"
+  },
+
+  "unratedEntries": "Unbewertete Einträge",
+  "@unratedEntries": {
+    "description": "Section title for unrated entries"
+  },
+
+  "settings": "Einstellungen",
+  "@settings": {
+    "description": "Settings menu title"
+  },
+
+  "notificationInterval": "Benachrichtigungsintervall",
+  "@notificationInterval": {
+    "description": "Label for notification interval setting"
+  },
+
+  "save": "Speichern",
+  "@save": {
+    "description": "Save button text"
+  },
+
+  "cancel": "Abbrechen",
+  "@cancel": {
+    "description": "Cancel button text"
+  },
+
+  "minutes": "Minuten",
+  "@minutes": {
+    "description": "Unit for time in minutes"
+  }
+}

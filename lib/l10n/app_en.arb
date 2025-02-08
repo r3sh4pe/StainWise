@@ -1,0 +1,77 @@
+{
+  "appTitle": "Strain Monitor",
+
+  "@appTitle": {
+    "description": "The application's name"
+  },
+
+  "strainLevel": "Strain Level",
+  "@strainLevel": {
+    "description": "Label for strain level input"
+  },
+
+  "strainNote": "Note",
+  "@strainNote": {
+    "description": "Label for optional note input"
+  },
+
+  "createEntry": "Create Entry",
+  "@createEntry": {
+    "description": "Button to create a new strain entry"
+  },
+
+  "skillName": "Skill Name",
+  "@skillName": {
+    "description": "Label for skill name input"
+  },
+
+  "skillDescription": "Description",
+  "@skillDescription": {
+    "description": "Label for skill description input"
+  },
+
+  "symptomName": "Symptom Name",
+  "@symptomName": {
+    "description": "Label for symptom name input"
+  },
+
+  "symptomDescription": "Description",
+  "@symptomDescription": {
+    "description": "Label for symptom description input"
+  },
+
+  "rateSkill": "Rate Skill",
+  "@rateSkill": {
+    "description": "Button to rate a skill"
+  },
+
+  "unratedEntries": "Unrated Entries",
+  "@unratedEntries": {
+    "description": "Section title for unrated entries"
+  },
+
+  "settings": "Settings",
+  "@settings": {
+    "description": "Settings menu title"
+  },
+
+  "notificationInterval": "Notification Interval",
+  "@notificationInterval": {
+    "description": "Label for notification interval setting"
+  },
+
+  "save": "Save",
+  "@save": {
+    "description": "Save button text"
+  },
+
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Cancel button text"
+  },
+
+  "minutes": "Minutes",
+  "@minutes": {
+    "description": "Unit for time in minutes"
+  }
+}
