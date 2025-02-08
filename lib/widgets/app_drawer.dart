@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../l10n/l10n.dart';
+import '../views/symptoms/symptoms_list_view.dart';
 
 class AppDrawer extends StatelessWidget {
   const AppDrawer({super.key});
@@ -45,8 +46,13 @@ class AppDrawer extends StatelessWidget {
             leading: const Icon(Icons.medical_information),
             title: Text(l10n.symptoms),
             onTap: () {
-              Navigator.pop(context);
-              // TODO: Navigate to symptoms page
+              Navigator.pop(context); // Close drawer first
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const SymptomsListView(),
+                ),
+              );
             },
           ),
           const Spacer(),

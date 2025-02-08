@@ -49,24 +49,66 @@
     "description": "Label for symptoms section"
   },
 
-  "rateSkill": "Fähigkeit bewerten",
-  "@rateSkill": {
-    "description": "Button to rate a skill"
+  "noSymptomsYet": "Noch keine Symptome hinzugefügt",
+  "@noSymptomsYet": {
+    "description": "Message shown when no symptoms exist"
   },
 
-  "unratedEntries": "Unbewertete Einträge",
-  "@unratedEntries": {
-    "description": "Section title for unrated entries"
+  "editSymptom": "{name} bearbeiten",
+  "@editSymptom": {
+    "description": "Title for symptom editing page",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Kopfschmerzen"
+      }
+    }
   },
 
-  "settings": "Einstellungen",
-  "@settings": {
-    "description": "Settings menu title"
+  "deleteSymptom": "Symptom löschen?",
+  "@deleteSymptom": {
+    "description": "Title for symptom deletion dialog"
   },
 
-  "notificationInterval": "Benachrichtigungsintervall",
-  "@notificationInterval": {
-    "description": "Label for notification interval setting"
+  "deleteConfirmation": "Diese Aktion kann nicht rückgängig gemacht werden.",
+  "@deleteConfirmation": {
+    "description": "Warning message for deletion"
+  },
+
+  "delete": "Löschen",
+  "@delete": {
+    "description": "Delete button text"
+  },
+
+  "active": "Aktiv",
+  "@active": {
+    "description": "Label for active status"
+  },
+
+  "currentStrainLevel": "Aktuelles Belastungsniveau: {level}",
+  "@currentStrainLevel": {
+    "description": "Label for current strain level",
+    "placeholders": {
+      "level": {
+        "type": "int",
+        "example": "75"
+      }
+    }
+  },
+
+  "pleaseEnterName": "Bitte geben Sie einen Namen ein",
+  "@pleaseEnterName": {
+    "description": "Validation message for empty name"
+  },
+
+  "error": "Fehler",
+  "@error": {
+    "description": "Generic error message title"
+  },
+
+  "errorOccurred": "Ein Fehler ist aufgetreten",
+  "@errorOccurred": {
+    "description": "Generic error message"
   },
 
   "save": "Speichern",
@@ -79,8 +121,111 @@
     "description": "Cancel button text"
   },
 
-  "minutes": "Minuten",
-  "@minutes": {
-    "description": "Unit for time in minutes"
+
+  "settings": "Einstellungen",
+  "@settings": {
+    "description": "Settings menu title"
+  },
+
+  "settingsTheme": "Design",
+  "@settingsTheme": {
+    "description": "Theme settings section title"
+  },
+
+  "settingsThemeLatte": "Latte (Hell)",
+  "@settingsThemeLatte": {
+    "description": "Latte theme option"
+  },
+
+  "settingsThemeFrappe": "Frappé",
+  "@settingsThemeFrappe": {
+    "description": "Frappé theme option"
+  },
+
+  "settingsThemeMacchiato": "Macchiato",
+  "@settingsThemeMacchiato": {
+    "description": "Macchiato theme option"
+  },
+
+  "settingsThemeMocha": "Mocha",
+  "@settingsThemeMocha": {
+    "description": "Mocha theme option"
+  },
+
+  "settingsNotifications": "Benachrichtigungen",
+  "@settingsNotifications": {
+    "description": "Notifications settings section title"
+  },
+
+  "settingsNotificationsEnabled": "Benachrichtigungen aktivieren",
+  "@settingsNotificationsEnabled": {
+    "description": "Toggle for enabling/disabling notifications"
+  },
+
+  "settingsNotificationInterval": "Erinnerungsintervall",
+  "@settingsNotificationInterval": {
+    "description": "Setting for notification interval"
+  },
+
+  "settingsLanguage": "Sprache",
+  "@settingsLanguage": {
+    "description": "Language settings section title"
+  },
+
+  "settingsDataManagement": "Datenverwaltung",
+  "@settingsDataManagement": {
+    "description": "Data management section title"
+  },
+
+  "settingsExportData": "Daten exportieren",
+  "@settingsExportData": {
+    "description": "Button to export user data"
+  },
+
+  "settingsImportData": "Daten importieren",
+  "@settingsImportData": {
+    "description": "Button to import user data"
+  },
+
+  "settingsDeleteData": "Alle Daten löschen",
+  "@settingsDeleteData": {
+    "description": "Button to delete all user data"
+  },
+
+  "settingsConfirmDelete": "Sind Sie sicher, dass Sie alle Daten löschen möchten? Diese Aktion kann nicht rückgängig gemacht werden.",
+  "@settingsConfirmDelete": {
+    "description": "Confirmation message for data deletion"
+  },
+
+  "settingsAbout": "Über",
+  "@settingsAbout": {
+    "description": "About section title"
+  },
+
+  "settingsVersion": "Version",
+  "@settingsVersion": {
+    "description": "App version label"
+  },
+
+  "minutesShort": "{count,plural, =1{1 Min.}other{{count} Min.}}",
+  "@minutesShort": {
+    "description": "Short form of minutes",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "5"
+      }
+    }
+  },
+
+  "hours": "{count,plural, =1{1 Stunde}other{{count} Stunden}}",
+  "@hours": {
+    "description": "Hours text with plural forms",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "2"
+      }
+    }
   }
 }

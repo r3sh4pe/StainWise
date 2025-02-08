@@ -49,24 +49,66 @@
     "description": "Label for symptoms section"
   },
 
-  "rateSkill": "Rate Skill",
-  "@rateSkill": {
-    "description": "Button to rate a skill"
+  "noSymptomsYet": "No symptoms added yet",
+  "@noSymptomsYet": {
+    "description": "Message shown when no symptoms exist"
   },
 
-  "unratedEntries": "Unrated Entries",
-  "@unratedEntries": {
-    "description": "Section title for unrated entries"
+  "editSymptom": "Edit {name}",
+  "@editSymptom": {
+    "description": "Title for symptom editing page",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Headache"
+      }
+    }
   },
 
-  "settings": "Settings",
-  "@settings": {
-    "description": "Settings menu title"
+  "deleteSymptom": "Delete Symptom?",
+  "@deleteSymptom": {
+    "description": "Title for symptom deletion dialog"
   },
 
-  "notificationInterval": "Notification Interval",
-  "@notificationInterval": {
-    "description": "Label for notification interval setting"
+  "deleteConfirmation": "This action cannot be undone.",
+  "@deleteConfirmation": {
+    "description": "Warning message for deletion"
+  },
+
+  "delete": "Delete",
+  "@delete": {
+    "description": "Delete button text"
+  },
+
+  "active": "Active",
+  "@active": {
+    "description": "Label for active status"
+  },
+
+  "currentStrainLevel": "Current Strain Level: {level}",
+  "@currentStrainLevel": {
+    "description": "Label for current strain level",
+    "placeholders": {
+      "level": {
+        "type": "int",
+        "example": "75"
+      }
+    }
+  },
+
+  "pleaseEnterName": "Please enter a name",
+  "@pleaseEnterName": {
+    "description": "Validation message for empty name"
+  },
+
+  "error": "Error",
+  "@error": {
+    "description": "Generic error message title"
+  },
+
+  "errorOccurred": "An error occurred",
+  "@errorOccurred": {
+    "description": "Generic error message"
   },
 
   "save": "Save",
@@ -79,8 +121,111 @@
     "description": "Cancel button text"
   },
 
-  "minutes": "Minutes",
-  "@minutes": {
-    "description": "Unit for time in minutes"
+
+  "settings": "Settings",
+  "@settings": {
+    "description": "Settings menu title"
+  },
+
+  "settingsTheme": "Theme",
+  "@settingsTheme": {
+    "description": "Theme settings section title"
+  },
+
+  "settingsThemeLatte": "Latte (Light)",
+  "@settingsThemeLatte": {
+    "description": "Latte theme option"
+  },
+
+  "settingsThemeFrappe": "Frappé",
+  "@settingsThemeFrappe": {
+    "description": "Frappé theme option"
+  },
+
+  "settingsThemeMacchiato": "Macchiato",
+  "@settingsThemeMacchiato": {
+    "description": "Macchiato theme option"
+  },
+
+  "settingsThemeMocha": "Mocha",
+  "@settingsThemeMocha": {
+    "description": "Mocha theme option"
+  },
+
+  "settingsNotifications": "Notifications",
+  "@settingsNotifications": {
+    "description": "Notifications settings section title"
+  },
+
+  "settingsNotificationsEnabled": "Enable Notifications",
+  "@settingsNotificationsEnabled": {
+    "description": "Toggle for enabling/disabling notifications"
+  },
+
+  "settingsNotificationInterval": "Reminder Interval",
+  "@settingsNotificationInterval": {
+    "description": "Setting for notification interval"
+  },
+
+  "settingsLanguage": "Language",
+  "@settingsLanguage": {
+    "description": "Language settings section title"
+  },
+
+  "settingsDataManagement": "Data Management",
+  "@settingsDataManagement": {
+    "description": "Data management section title"
+  },
+
+  "settingsExportData": "Export Data",
+  "@settingsExportData": {
+    "description": "Button to export user data"
+  },
+
+  "settingsImportData": "Import Data",
+  "@settingsImportData": {
+    "description": "Button to import user data"
+  },
+
+  "settingsDeleteData": "Delete All Data",
+  "@settingsDeleteData": {
+    "description": "Button to delete all user data"
+  },
+
+  "settingsConfirmDelete": "Are you sure you want to delete all data? This action cannot be undone.",
+  "@settingsConfirmDelete": {
+    "description": "Confirmation message for data deletion"
+  },
+
+  "settingsAbout": "About",
+  "@settingsAbout": {
+    "description": "About section title"
+  },
+
+  "settingsVersion": "Version",
+  "@settingsVersion": {
+    "description": "App version label"
+  },
+
+  "minutesShort": "{count,plural, =1{1 min}other{{count} mins}}",
+  "@minutesShort": {
+    "description": "Short form of minutes",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "5"
+      }
+    }
+  },
+
+  "hours": "{count,plural, =1{1 hour}other{{count} hours}}",
+  "@hours": {
+    "description": "Hours text with plural forms",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "2"
+      }
+    }
   }
 }

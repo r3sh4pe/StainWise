@@ -1,25 +1,44 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
+import 'models/symptom.dart';
 import 'theme/theme_provider.dart';
+import 'viewmodels/symptom_viewmodel.dart';
 import 'pages/home_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const MyApp());
+
+  // Initialize Hive
+  await Hive.initFlutter();
+
+  // Register Hive Adapters
+  Hive.registerAdapter(SymptomAdapter());
+
+  // Create ViewModel instances
+  final symptomViewModel = SymptomViewModel();
+  await symptomViewModel.init();
+
+  runApp(MyApp(symptomViewModel: symptomViewModel));
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  final SymptomViewModel symptomViewModel;
+
+  const MyApp({
+    super.key,
+    required this.symptomViewModel,
+  });
 
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => ThemeProvider()),
-        // Add other providers here as needed
+        ChangeNotifierProvider.value(value: symptomViewModel),
       ],
       child: Consumer<ThemeProvider>(
         builder: (context, themeProvider, _) {
