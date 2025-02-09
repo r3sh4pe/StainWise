@@ -284,5 +284,20 @@
   "needsRating": "Needs rating",
   "@needsRating": {
     "description": "Text shown when a skill needs to be rated"
-  }
+  },
+  "settingsNotificationsDesc": "Enable or disable reminders",
+  "settingsSleepTime": "Sleep Time",
+  "settingsSleepTimeDesc": "No notifications will be sent during sleep time",
+  "settingsReset": "Reset Settings",
+  "settingsResetDesc": "Restore default settings",
+  "settingsResetConfirm": "Are you sure you want to reset all settings to default?",
+  "edit": "Edit",
+  "setSleepTime": "Set Sleep Time",
+  "sleepTimeDescription": "Select the time range during which notifications will be paused",
+  "sleepStart": "Sleep Start",
+  "sleepEnd": "Sleep End",
+  "selectSleepStart": "Select sleep start time",
+  "selectSleepEnd": "Select sleep end time",
+  "statistics": "Statistics",
+  "comingSoon": "Coming soon!"
 }

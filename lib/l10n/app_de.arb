@@ -284,5 +284,20 @@
   "needsRating": "Bewertung benötigt",
   "@needsRating": {
     "description": "Text shown when a skill needs to be rated"
-  }
+  },
+  "settingsNotificationsDesc": "Erinnerungen aktivieren oder deaktivieren",
+  "settingsSleepTime": "Schlafenszeit",
+  "settingsSleepTimeDesc": "Während der Schlafenszeit werden keine Benachrichtigungen gesendet",
+  "settingsReset": "Einstellungen zurücksetzen",
+  "settingsResetDesc": "Standardeinstellungen wiederherstellen",
+  "settingsResetConfirm": "Möchten Sie wirklich alle Einstellungen auf die Standardwerte zurücksetzen?",
+  "edit": "Bearbeiten",
+  "setSleepTime": "Set Sleep Time",
+  "sleepTimeDescription": "Select the time range during which notifications will be paused",
+  "sleepStart": "Sleep Start",
+  "sleepEnd": "Sleep End",
+  "selectSleepStart": "Select sleep start time",
+  "selectSleepEnd": "Select sleep end time",
+  "statistics": "Statistiken",
+  "comingSoon": "Demnächst verfügbar!"
 }
