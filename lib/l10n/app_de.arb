@@ -227,5 +227,54 @@
         "example": "2"
       }
     }
+  },
+  "noSkillsYet": "Noch keine Fähigkeiten hinzugefügt",
+  "@noSkillsYet": {
+    "description": "Message shown when no skills exist"
+  },
+
+  "skillRating": "Bewertung: {rating}/5",
+  "@skillRating": {
+    "description": "Display format for skill rating",
+    "placeholders": {
+      "rating": {
+        "type": "String",
+        "example": "4.5"
+      }
+    }
+  },
+
+  "skillStrainRange": "Belastungsbereich: {start} - {end}",
+  "@skillStrainRange": {
+    "description": "Display format for skill strain range",
+    "placeholders": {
+      "start": {
+        "type": "int",
+        "example": "0"
+      },
+      "end": {
+        "type": "int",
+        "example": "50"
+      }
+    }
+  },
+
+  "filterByTag": "Nach Tag filtern",
+  "@filterByTag": {
+    "description": "Label for tag filter"
+  },
+  "addTag": "Tag hinzufügen",
+  "@addTag": {
+    "description": "Label for tag input field"
+  },
+
+  "strainRange": "Belastungsbereich",
+  "@strainRange": {
+    "description": "Label for strain range slider"
+  },
+
+  "strainRangeError": "Untere Grenze kann nicht größer als obere Grenze sein",
+  "@strainRangeError": {
+    "description": "Error message for invalid strain range"
   }
 }

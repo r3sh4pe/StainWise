@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../l10n/l10n.dart';
 import '../views/symptoms/symptoms_list_view.dart';
+import '../views/skills/skills_list_view.dart';
 
 class AppDrawer extends StatelessWidget {
   const AppDrawer({super.key});
@@ -38,8 +39,13 @@ class AppDrawer extends StatelessWidget {
             leading: const Icon(Icons.psychology),
             title: Text(l10n.skills),
             onTap: () {
-              Navigator.pop(context);
-              // TODO: Navigate to skills page
+              Navigator.pop(context); // Close drawer first
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const SkillsListView(),
+                ),
+              );
             },
           ),
           ListTile(
