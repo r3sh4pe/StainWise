@@ -276,5 +276,59 @@
   "strainRangeError": "Untere Grenze kann nicht größer als obere Grenze sein",
   "@strainRangeError": {
     "description": "Error message for invalid strain range"
+  },
+  "noEntriesYet": "Keine Einträge für diesen Tag",
+  "@noEntriesYet": {
+    "description": "Message shown when no strain entries exist for the selected date"
+  },
+  "averageStrain": "Durchschnittliche Belastung",
+  "@averageStrain": {
+    "description": "Label for average strain level"
+  },
+  "strainEntryTimeFormat": "{time}",
+  "@strainEntryTimeFormat": {
+    "description": "Format for strain entry time",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:30"
+      }
+    }
+  },
+  "entryTitle": "Titel",
+  "@entryTitle": {
+    "description": "Label for strain entry title input"
+  },
+  "entryNote": "Notiz",
+  "@entryNote": {
+    "description": "Label for strain entry note input"
+  },
+  "pleaseEnterTitle": "Bitte geben Sie einen Titel ein",
+  "@pleaseEnterTitle": {
+    "description": "Validation message for empty title"
+  },
+  "selectSymptoms": "Symptome auswählen",
+  "@selectSymptoms": {
+    "description": "Label for symptoms selection"
+  },
+  "suggestedSkills": "Fähigkeit auswählen",
+  "@suggestedSkills": {
+    "description": "Label for skills selection"
+  },
+  "editEntry": "Eintrag bearbeiten",
+  "@editEntry": {
+    "description": "Title for strain entry edit view"
+  },
+  "usedSkill": "Verwendete Fähigkeit",
+  "@usedSkill": {
+    "description": "Label for used skill section"
+  },
+  "rateSkillNow": "Diese Fähigkeit jetzt bewerten",
+  "@rateSkillNow": {
+    "description": "Label for skill rating checkbox"
+  },
+  "needsRating": "Bewertung benötigt",
+  "@needsRating": {
+    "description": "Text shown when a skill needs to be rated"
   }
 }

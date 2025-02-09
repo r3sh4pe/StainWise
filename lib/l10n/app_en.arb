@@ -276,5 +276,59 @@
   "strainRangeError": "Lower fence cannot be greater than upper fence",
   "@strainRangeError": {
     "description": "Error message for invalid strain range"
+  },
+  "noEntriesYet": "No entries recorded for this day",
+  "@noEntriesYet": {
+    "description": "Message shown when no strain entries exist for the selected date"
+  },
+  "averageStrain": "Average Strain",
+  "@averageStrain": {
+    "description": "Label for average strain level"
+  },
+  "strainEntryTimeFormat": "{time}",
+  "@strainEntryTimeFormat": {
+    "description": "Format for strain entry time",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:30"
+      }
+    }
+  },
+  "entryTitle": "Title",
+  "@entryTitle": {
+    "description": "Label for strain entry title input"
+  },
+  "entryNote": "Note",
+  "@entryNote": {
+    "description": "Label for strain entry note input"
+  },
+  "pleaseEnterTitle": "Please enter a title",
+  "@pleaseEnterTitle": {
+    "description": "Validation message for empty title"
+  },
+  "selectSymptoms": "Select Symptoms",
+  "@selectSymptoms": {
+    "description": "Label for symptoms selection"
+  },
+  "suggestedSkills": "Select a Skill",
+  "@suggestedSkills": {
+    "description": "Label for skills selection"
+  },
+  "editEntry": "Edit Entry",
+  "@editEntry": {
+    "description": "Title for strain entry edit view"
+  },
+  "usedSkill": "Used Skill",
+  "@usedSkill": {
+    "description": "Label for used skill section"
+  },
+  "rateSkillNow": "Rate this skill now",
+  "@rateSkillNow": {
+    "description": "Label for skill rating checkbox"
+  },
+  "needsRating": "Needs rating",
+  "@needsRating": {
+    "description": "Text shown when a skill needs to be rated"
   }
 }

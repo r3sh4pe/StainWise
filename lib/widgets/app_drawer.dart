@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+
 import '../l10n/l10n.dart';
-import '../views/symptoms/symptoms_list_view.dart';
 import '../views/skills/skills_list_view.dart';
+import '../views/strain_entries/strain_entries_list_view.dart';
+import '../views/symptoms/symptoms_list_view.dart';
 
 class AppDrawer extends StatelessWidget {
   const AppDrawer({super.key});
@@ -32,14 +34,19 @@ class AppDrawer extends StatelessWidget {
             title: Text(l10n.strainLevel),
             onTap: () {
               Navigator.pop(context); // Close drawer
-              // TODO: Navigate to strain page
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const StrainEntriesListView(),
+                ),
+              );
             },
           ),
           ListTile(
             leading: const Icon(Icons.psychology),
             title: Text(l10n.skills),
             onTap: () {
-              Navigator.pop(context); // Close drawer first
+              Navigator.pop(context);
               Navigator.push(
                 context,
                 MaterialPageRoute(
@@ -52,7 +59,7 @@ class AppDrawer extends StatelessWidget {
             leading: const Icon(Icons.medical_information),
             title: Text(l10n.symptoms),
             onTap: () {
-              Navigator.pop(context); // Close drawer first
+              Navigator.pop(context);
               Navigator.push(
                 context,
                 MaterialPageRoute(

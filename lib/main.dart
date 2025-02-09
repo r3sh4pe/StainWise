@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:provider/provider.dart';
-import 'package:hive_flutter/hive_flutter.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+import 'package:provider/provider.dart';
 
-import 'models/symptom.dart';
 import 'models/skill.dart';
-import 'theme/theme_provider.dart';
-import 'viewmodels/symptom_viewmodel.dart';
-import 'viewmodels/skill_viewmodel.dart';
+import 'models/strain_entry.dart';
+import 'models/symptom.dart';
 import 'pages/home_page.dart';
+import 'theme/theme_provider.dart';
+import 'viewmodels/skill_viewmodel.dart';
+import 'viewmodels/strain_entry_viewmodel.dart';
+import 'viewmodels/symptom_viewmodel.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,6 +22,7 @@ Future<void> main() async {
   // Register Hive Adapters
   Hive.registerAdapter(SymptomAdapter());
   Hive.registerAdapter(SkillAdapter());
+  Hive.registerAdapter(StrainEntryAdapter());
 
   // Create ViewModel instances
   final symptomViewModel = SymptomViewModel();
@@ -28,20 +31,26 @@ Future<void> main() async {
   final skillViewModel = SkillViewModel();
   await skillViewModel.init();
 
+  final strainEntryViewModel = StrainEntryViewModel();
+  await strainEntryViewModel.init();
+
   runApp(MyApp(
     symptomViewModel: symptomViewModel,
     skillViewModel: skillViewModel,
+    strainEntryViewModel: strainEntryViewModel,
   ));
 }
 
 class MyApp extends StatelessWidget {
   final SymptomViewModel symptomViewModel;
   final SkillViewModel skillViewModel;
+  final StrainEntryViewModel strainEntryViewModel;
 
   const MyApp({
     super.key,
     required this.symptomViewModel,
     required this.skillViewModel,
+    required this.strainEntryViewModel,
   });
 
   @override
@@ -51,6 +60,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => ThemeProvider()),
         ChangeNotifierProvider.value(value: symptomViewModel),
         ChangeNotifierProvider.value(value: skillViewModel),
+        ChangeNotifierProvider.value(value: strainEntryViewModel),
       ],
       child: Consumer<ThemeProvider>(
         builder: (context, themeProvider, _) {
