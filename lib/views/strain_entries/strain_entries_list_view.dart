@@ -145,7 +145,8 @@ class _StrainEntriesListViewState extends State<StrainEntriesListView> {
                       // Unrated skills indicator
                       if (unratedCount > 0)
                         Card(
-                          color: theme.colorScheme.primary.withOpacity(0.1),
+                          color:
+                              theme.colorScheme.primary.withValues(alpha: 0.1),
                           child: Padding(
                             padding: const EdgeInsets.all(16.0),
                             child: Row(
@@ -243,7 +244,9 @@ class StrainEntryListTile extends StatelessWidget {
               )
             : BorderSide.none,
       ),
-      color: needsRating ? theme.colorScheme.primary.withOpacity(0.05) : null,
+      color: needsRating
+          ? theme.colorScheme.primary.withValues(alpha: 0.05)
+          : null,
       child: ListTile(
         leading: _buildStrainIndicator(context),
         title: Text(entry.title),

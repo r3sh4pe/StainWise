@@ -60,9 +60,13 @@ class _StrainEntryFormViewState extends State<StrainEntryFormView> {
         symptoms: _selectedSymptoms,
         usedSkill: _selectedSkill,
       );
-      navigator.pop();
+      if (mounted) {
+        navigator.pop();
+      }
     } catch (e) {
-      _showErrorDialog(viewModel.errorMessage ?? context.l10n.errorOccurred);
+      if (mounted) {
+        _showErrorDialog(viewModel.errorMessage ?? context.l10n.errorOccurred);
+      }
     }
   }
 
@@ -233,9 +237,9 @@ class _StrainEntryFormViewState extends State<StrainEntryFormView> {
 
   Color? _getSkillHighlightColor(double rating, ColorScheme colors) {
     if (rating >= 4) {
-      return colors.primaryContainer.withOpacity(0.3);
+      return colors.primaryContainer.withValues(alpha: 0.3);
     } else if (rating >= 3) {
-      return colors.secondaryContainer.withOpacity(0.2);
+      return colors.secondaryContainer.withValues(alpha: 0.2);
     }
     return null;
   }

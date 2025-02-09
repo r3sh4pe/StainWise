@@ -76,7 +76,9 @@ class _StrainEntryEditViewState extends State<StrainEntryEditView> {
 
       navigator.pop();
     } catch (e) {
-      _showErrorDialog(viewModel.errorMessage ?? context.l10n.errorOccurred);
+      if (mounted) {
+        _showErrorDialog(viewModel.errorMessage ?? context.l10n.errorOccurred);
+      }
     }
   }
 
