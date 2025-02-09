@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+
 import '../models/symptom.dart';
 
 class SymptomViewModel extends ChangeNotifier {
@@ -9,10 +10,13 @@ class SymptomViewModel extends ChangeNotifier {
 
   // Getters
   bool get isLoading => _isLoading;
+
   String? get errorMessage => _errorMessage;
 
   List<Symptom> get symptoms => _symptomBox.values.toList();
-  List<Symptom> get activeSymptoms => _symptomBox.values.where((s) => s.isActive).toList();
+
+  List<Symptom> get activeSymptoms =>
+      _symptomBox.values.where((s) => s.isActive).toList();
 
   // Initialize the ViewModel
   Future<void> init() async {
@@ -52,11 +56,11 @@ class SymptomViewModel extends ChangeNotifier {
 
   // Update an existing symptom
   Future<void> updateSymptom(
-      Symptom symptom, {
-        String? name,
-        String? description,
-        bool? isActive,
-      }) async {
+    Symptom symptom, {
+    String? name,
+    String? description,
+    bool? isActive,
+  }) async {
     _setLoading(true);
     try {
       if (name != null) symptom.updateName(name);
@@ -117,9 +121,11 @@ class SymptomViewModel extends ChangeNotifier {
   }
 
   // Get symptoms for a specific date range
-  List<Symptom> getSymptomsWithStrainInDateRange(DateTime startDate, DateTime endDate) {
+  List<Symptom> getSymptomsWithStrainInDateRange(
+      DateTime startDate, DateTime endDate) {
     return symptoms
-        .where((symptom) => symptom.getStrainEntriesForDateRange(startDate, endDate).isNotEmpty)
+        .where((symptom) =>
+            symptom.getStrainEntriesForDateRange(startDate, endDate).isNotEmpty)
         .toList();
   }
 

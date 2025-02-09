@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+
 import '../models/skill.dart';
 
 class SkillViewModel extends ChangeNotifier {
@@ -9,10 +10,13 @@ class SkillViewModel extends ChangeNotifier {
 
   // Getters
   bool get isLoading => _isLoading;
+
   String? get errorMessage => _errorMessage;
 
   List<Skill> get skills => _skillBox.values.toList();
-  List<Skill> get activeSkills => _skillBox.values.where((s) => s.isActive).toList();
+
+  List<Skill> get activeSkills =>
+      _skillBox.values.where((s) => s.isActive).toList();
 
   // Initialize the ViewModel
   Future<void> init() async {
@@ -59,12 +63,12 @@ class SkillViewModel extends ChangeNotifier {
 
   // Update an existing skill
   Future<void> updateSkill(
-      Skill skill, {
-        String? name,
-        String? description,
-        bool? isActive,
-        List<String>? tags,
-      }) async {
+    Skill skill, {
+    String? name,
+    String? description,
+    bool? isActive,
+    List<String>? tags,
+  }) async {
     _setLoading(true);
     try {
       if (name != null) skill.updateName(name);
@@ -151,16 +155,14 @@ class SkillViewModel extends ChangeNotifier {
   // Get skills by tag
   List<Skill> getSkillsByTag(String tag) {
     final normalizedTag = tag.trim().toLowerCase();
-    return skills.where((skill) =>
-        skill.tags.contains(normalizedTag)
-    ).toList();
+    return skills.where((skill) => skill.tags.contains(normalizedTag)).toList();
   }
 
   // Get applicable skills for a strain level
   List<Skill> getSkillsForStrainLevel(int strainLevel) {
-    return activeSkills.where((skill) =>
-        skill.isApplicableForStrain(strainLevel)
-    ).toList();
+    return activeSkills
+        .where((skill) => skill.isApplicableForStrain(strainLevel))
+        .toList();
   }
 
   // Get skills sorted by average rating
@@ -168,8 +170,7 @@ class SkillViewModel extends ChangeNotifier {
     final sortedSkills = List<Skill>.from(activeSkills);
     sortedSkills.sort((a, b) => descending
         ? b.averageRating.compareTo(a.averageRating)
-        : a.averageRating.compareTo(b.averageRating)
-    );
+        : a.averageRating.compareTo(b.averageRating));
     return sortedSkills;
   }
 
@@ -178,8 +179,7 @@ class SkillViewModel extends ChangeNotifier {
     final sortedSkills = List<Skill>.from(activeSkills);
     sortedSkills.sort((a, b) => descending
         ? b.usageCount.compareTo(a.usageCount)
-        : a.usageCount.compareTo(b.usageCount)
-    );
+        : a.usageCount.compareTo(b.usageCount));
     return sortedSkills;
   }
 

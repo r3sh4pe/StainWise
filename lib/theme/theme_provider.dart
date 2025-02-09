@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'theme_constants.dart';
 
 class ThemeProvider extends ChangeNotifier {
@@ -6,6 +7,7 @@ class ThemeProvider extends ChangeNotifier {
   bool _isDark = true;
 
   ThemeVariant get currentVariant => _currentVariant;
+
   bool get isDark => _isDark;
 
   void setThemeVariant(ThemeVariant variant) {
@@ -100,7 +102,8 @@ class ThemeProvider extends ChangeNotifier {
         }),
         trackColor: WidgetStateProperty.resolveWith((states) {
           if (states.contains(WidgetState.selected)) {
-            return palette.blue.withValues(alpha: 128); // Using withValues instead of withOpacity
+            return palette.blue.withValues(
+                alpha: 128); // Using withValues instead of withOpacity
           }
           return palette.surface2;
         }),

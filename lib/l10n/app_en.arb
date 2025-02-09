@@ -3,57 +3,46 @@
   "@appTitle": {
     "description": "The application's name"
   },
-
   "strainLevel": "Strain Level",
   "@strainLevel": {
     "description": "Label for strain level input"
   },
-
   "strainNote": "Note",
   "@strainNote": {
     "description": "Label for optional note input"
   },
-
   "createEntry": "Create Entry",
   "@createEntry": {
     "description": "Button to create a new strain entry"
   },
-
   "skillName": "Skill Name",
   "@skillName": {
     "description": "Label for skill name input"
   },
-
   "skillDescription": "Description",
   "@skillDescription": {
     "description": "Label for skill description input"
   },
-
   "skills": "Skills",
   "@skills": {
     "description": "Label for skills section"
   },
-
   "symptomName": "Symptom Name",
   "@symptomName": {
     "description": "Label for symptom name input"
   },
-
   "symptomDescription": "Description",
   "@symptomDescription": {
     "description": "Label for symptom description input"
   },
-
   "symptoms": "Symptoms",
   "@symptoms": {
     "description": "Label for symptoms section"
   },
-
   "noSymptomsYet": "No symptoms added yet",
   "@noSymptomsYet": {
     "description": "Message shown when no symptoms exist"
   },
-
   "editSymptom": "Edit {name}",
   "@editSymptom": {
     "description": "Title for symptom editing page",
@@ -64,27 +53,22 @@
       }
     }
   },
-
   "deleteSymptom": "Delete Symptom?",
   "@deleteSymptom": {
     "description": "Title for symptom deletion dialog"
   },
-
   "deleteConfirmation": "This action cannot be undone.",
   "@deleteConfirmation": {
     "description": "Warning message for deletion"
   },
-
   "delete": "Delete",
   "@delete": {
     "description": "Delete button text"
   },
-
   "active": "Active",
   "@active": {
     "description": "Label for active status"
   },
-
   "currentStrainLevel": "Current Strain Level: {level}",
   "@currentStrainLevel": {
     "description": "Label for current strain level",
@@ -95,118 +79,94 @@
       }
     }
   },
-
   "pleaseEnterName": "Please enter a name",
   "@pleaseEnterName": {
     "description": "Validation message for empty name"
   },
-
   "error": "Error",
   "@error": {
     "description": "Generic error message title"
   },
-
   "errorOccurred": "An error occurred",
   "@errorOccurred": {
     "description": "Generic error message"
   },
-
   "save": "Save",
   "@save": {
     "description": "Save button text"
   },
-
   "cancel": "Cancel",
   "@cancel": {
     "description": "Cancel button text"
   },
-
-
   "settings": "Settings",
   "@settings": {
     "description": "Settings menu title"
   },
-
   "settingsTheme": "Theme",
   "@settingsTheme": {
     "description": "Theme settings section title"
   },
-
   "settingsThemeLatte": "Latte (Light)",
   "@settingsThemeLatte": {
     "description": "Latte theme option"
   },
-
   "settingsThemeFrappe": "Frappé",
   "@settingsThemeFrappe": {
     "description": "Frappé theme option"
   },
-
   "settingsThemeMacchiato": "Macchiato",
   "@settingsThemeMacchiato": {
     "description": "Macchiato theme option"
   },
-
   "settingsThemeMocha": "Mocha",
   "@settingsThemeMocha": {
     "description": "Mocha theme option"
   },
-
   "settingsNotifications": "Notifications",
   "@settingsNotifications": {
     "description": "Notifications settings section title"
   },
-
   "settingsNotificationsEnabled": "Enable Notifications",
   "@settingsNotificationsEnabled": {
     "description": "Toggle for enabling/disabling notifications"
   },
-
   "settingsNotificationInterval": "Reminder Interval",
   "@settingsNotificationInterval": {
     "description": "Setting for notification interval"
   },
-
   "settingsLanguage": "Language",
   "@settingsLanguage": {
     "description": "Language settings section title"
   },
-
   "settingsDataManagement": "Data Management",
   "@settingsDataManagement": {
     "description": "Data management section title"
   },
-
   "settingsExportData": "Export Data",
   "@settingsExportData": {
     "description": "Button to export user data"
   },
-
   "settingsImportData": "Import Data",
   "@settingsImportData": {
     "description": "Button to import user data"
   },
-
   "settingsDeleteData": "Delete All Data",
   "@settingsDeleteData": {
     "description": "Button to delete all user data"
   },
-
   "settingsConfirmDelete": "Are you sure you want to delete all data? This action cannot be undone.",
   "@settingsConfirmDelete": {
     "description": "Confirmation message for data deletion"
   },
-
   "settingsAbout": "About",
   "@settingsAbout": {
     "description": "About section title"
   },
-
   "settingsVersion": "Version",
   "@settingsVersion": {
     "description": "App version label"
   },
-
   "minutesShort": "{count,plural, =1{1 min}other{{count} mins}}",
   "@minutesShort": {
     "description": "Short form of minutes",
@@ -217,7 +177,6 @@
       }
     }
   },
-
   "hours": "{count,plural, =1{1 hour}other{{count} hours}}",
   "@hours": {
     "description": "Hours text with plural forms",
@@ -232,7 +191,6 @@
   "@noSkillsYet": {
     "description": "Message shown when no skills exist"
   },
-
   "skillRating": "Rating: {rating}/5",
   "@skillRating": {
     "description": "Display format for skill rating",
@@ -243,7 +201,6 @@
       }
     }
   },
-
   "skillStrainRange": "Strain range: {start} - {end}",
   "@skillStrainRange": {
     "description": "Display format for skill strain range",
@@ -258,7 +215,6 @@
       }
     }
   },
-
   "filterByTag": "Filter by tag",
   "@filterByTag": {
     "description": "Label for tag filter"
@@ -267,12 +223,10 @@
   "@addTag": {
     "description": "Label for tag input field"
   },
-
   "strainRange": "Strain Range",
   "@strainRange": {
     "description": "Label for strain range slider"
   },
-
   "strainRangeError": "Lower fence cannot be greater than upper fence",
   "@strainRangeError": {
     "description": "Error message for invalid strain range"

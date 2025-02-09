@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
 import '../../l10n/l10n.dart';
 import '../../models/skill.dart';
 import '../../viewmodels/skill_viewmodel.dart';
@@ -113,13 +114,13 @@ class _SkillsListViewState extends State<SkillsListView> {
                   },
                 ),
                 ...tags.map((tag) => ListTile(
-                  title: Text(tag),
-                  selected: tag == _selectedTag,
-                  onTap: () {
-                    setState(() => _selectedTag = tag);
-                    Navigator.pop(context);
-                  },
-                )),
+                      title: Text(tag),
+                      selected: tag == _selectedTag,
+                      onTap: () {
+                        setState(() => _selectedTag = tag);
+                        Navigator.pop(context);
+                      },
+                    )),
               ],
             ),
           ),
@@ -170,17 +171,20 @@ class SkillListTile extends StatelessWidget {
             if (skill.tags.isNotEmpty)
               Wrap(
                 spacing: 4,
-                children: skill.tags.map((tag) => Chip(
-                  label: Text(
-                    tag,
-                    style: theme.textTheme.bodySmall?.copyWith(
-                      color: theme.colorScheme.onSecondaryContainer,
-                    ),
-                  ),
-                  backgroundColor: theme.colorScheme.secondaryContainer,
-                  padding: EdgeInsets.zero,
-                  materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                )).toList(),
+                children: skill.tags
+                    .map((tag) => Chip(
+                          label: Text(
+                            tag,
+                            style: theme.textTheme.bodySmall?.copyWith(
+                              color: theme.colorScheme.onSecondaryContainer,
+                            ),
+                          ),
+                          backgroundColor: theme.colorScheme.secondaryContainer,
+                          padding: EdgeInsets.zero,
+                          materialTapTargetSize:
+                              MaterialTapTargetSize.shrinkWrap,
+                        ))
+                    .toList(),
               ),
           ],
         ),

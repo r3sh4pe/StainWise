@@ -68,7 +68,8 @@ class MyApp extends StatelessWidget {
             debugShowCheckedModeBanner: false,
 
             // App Title
-            onGenerateTitle: (context) => AppLocalizations.of(context)!.appTitle,
+            onGenerateTitle: (context) =>
+                AppLocalizations.of(context)!.appTitle,
 
             // Theme
             theme: themeProvider.getTheme(),

@@ -53,11 +53,11 @@ class Skill extends HiveObject {
     this.isActive = true,
     this.usageCount = 0,
   })  : assert(strainLowerFence >= 0 && strainLowerFence <= 100,
-  'Strain lower fence must be between 0 and 100'),
+            'Strain lower fence must be between 0 and 100'),
         assert(strainUpperFence >= 0 && strainUpperFence <= 100,
-        'Strain upper fence must be between 0 and 100'),
+            'Strain upper fence must be between 0 and 100'),
         assert(strainLowerFence <= strainUpperFence,
-        'Lower fence must not be greater than upper fence'),
+            'Lower fence must not be greater than upper fence'),
         ratings = ratings ?? [],
         ratingTimestamps = ratingTimestamps ?? [],
         tags = tags ?? [],
@@ -130,9 +130,9 @@ class Skill extends HiveObject {
 
   /// Gets ratings for a specific date range
   List<MapEntry<DateTime, double>> getRatingsForDateRange(
-      DateTime startDate,
-      DateTime endDate,
-      ) {
+    DateTime startDate,
+    DateTime endDate,
+  ) {
     final List<MapEntry<DateTime, double>> entries = [];
 
     for (var i = 0; i < ratingTimestamps.length; i++) {

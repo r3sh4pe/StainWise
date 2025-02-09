@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
 import '../../l10n/l10n.dart';
 import '../../models/symptom.dart';
 import '../../viewmodels/symptom_viewmodel.dart';
@@ -93,29 +94,29 @@ class SymptomListTile extends StatelessWidget {
         title: Text(symptom.name),
         subtitle: symptom.description != null
             ? Text(
-          symptom.description!,
-          maxLines: 2,
-          overflow: TextOverflow.ellipsis,
-        )
+                symptom.description!,
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+              )
             : null,
         trailing: latestLevel != null
             ? Container(
-          padding: const EdgeInsets.symmetric(
-            horizontal: 12,
-            vertical: 6,
-          ),
-          decoration: BoxDecoration(
-            color: _getStrainColor(latestLevel, theme),
-            borderRadius: BorderRadius.circular(16),
-          ),
-          child: Text(
-            '$latestLevel',
-            style: theme.textTheme.bodyMedium?.copyWith(
-              color: theme.colorScheme.onPrimary,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        )
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 12,
+                  vertical: 6,
+                ),
+                decoration: BoxDecoration(
+                  color: _getStrainColor(latestLevel, theme),
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                child: Text(
+                  '$latestLevel',
+                  style: theme.textTheme.bodyMedium?.copyWith(
+                    color: theme.colorScheme.onPrimary,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              )
             : null,
         onTap: () {
           Navigator.push(

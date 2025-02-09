@@ -3,57 +3,46 @@
   "@appTitle": {
     "description": "The application's name"
   },
-
   "strainLevel": "Belastungsniveau",
   "@strainLevel": {
     "description": "Label for strain level input"
   },
-
   "strainNote": "Notiz",
   "@strainNote": {
     "description": "Label for optional note input"
   },
-
   "createEntry": "Eintrag erstellen",
   "@createEntry": {
     "description": "Button to create a new strain entry"
   },
-
   "skillName": "Fähigkeitsname",
   "@skillName": {
     "description": "Label for skill name input"
   },
-
   "skillDescription": "Beschreibung",
   "@skillDescription": {
     "description": "Label for skill description input"
   },
-
   "skills": "Fähigkeiten",
   "@skills": {
     "description": "Label for skills section"
   },
-
   "symptomName": "Symptomname",
   "@symptomName": {
     "description": "Label for symptom name input"
   },
-
   "symptomDescription": "Beschreibung",
   "@symptomDescription": {
     "description": "Label for symptom description input"
   },
-
   "symptoms": "Symptome",
   "@symptoms": {
     "description": "Label for symptoms section"
   },
-
   "noSymptomsYet": "Noch keine Symptome hinzugefügt",
   "@noSymptomsYet": {
     "description": "Message shown when no symptoms exist"
   },
-
   "editSymptom": "{name} bearbeiten",
   "@editSymptom": {
     "description": "Title for symptom editing page",
@@ -64,27 +53,22 @@
       }
     }
   },
-
   "deleteSymptom": "Symptom löschen?",
   "@deleteSymptom": {
     "description": "Title for symptom deletion dialog"
   },
-
   "deleteConfirmation": "Diese Aktion kann nicht rückgängig gemacht werden.",
   "@deleteConfirmation": {
     "description": "Warning message for deletion"
   },
-
   "delete": "Löschen",
   "@delete": {
     "description": "Delete button text"
   },
-
   "active": "Aktiv",
   "@active": {
     "description": "Label for active status"
   },
-
   "currentStrainLevel": "Aktuelles Belastungsniveau: {level}",
   "@currentStrainLevel": {
     "description": "Label for current strain level",
@@ -95,118 +79,94 @@
       }
     }
   },
-
   "pleaseEnterName": "Bitte geben Sie einen Namen ein",
   "@pleaseEnterName": {
     "description": "Validation message for empty name"
   },
-
   "error": "Fehler",
   "@error": {
     "description": "Generic error message title"
   },
-
   "errorOccurred": "Ein Fehler ist aufgetreten",
   "@errorOccurred": {
     "description": "Generic error message"
   },
-
   "save": "Speichern",
   "@save": {
     "description": "Save button text"
   },
-
   "cancel": "Abbrechen",
   "@cancel": {
     "description": "Cancel button text"
   },
-
-
   "settings": "Einstellungen",
   "@settings": {
     "description": "Settings menu title"
   },
-
   "settingsTheme": "Design",
   "@settingsTheme": {
     "description": "Theme settings section title"
   },
-
   "settingsThemeLatte": "Latte (Hell)",
   "@settingsThemeLatte": {
     "description": "Latte theme option"
   },
-
   "settingsThemeFrappe": "Frappé",
   "@settingsThemeFrappe": {
     "description": "Frappé theme option"
   },
-
   "settingsThemeMacchiato": "Macchiato",
   "@settingsThemeMacchiato": {
     "description": "Macchiato theme option"
   },
-
   "settingsThemeMocha": "Mocha",
   "@settingsThemeMocha": {
     "description": "Mocha theme option"
   },
-
   "settingsNotifications": "Benachrichtigungen",
   "@settingsNotifications": {
     "description": "Notifications settings section title"
   },
-
   "settingsNotificationsEnabled": "Benachrichtigungen aktivieren",
   "@settingsNotificationsEnabled": {
     "description": "Toggle for enabling/disabling notifications"
   },
-
   "settingsNotificationInterval": "Erinnerungsintervall",
   "@settingsNotificationInterval": {
     "description": "Setting for notification interval"
   },
-
   "settingsLanguage": "Sprache",
   "@settingsLanguage": {
     "description": "Language settings section title"
   },
-
   "settingsDataManagement": "Datenverwaltung",
   "@settingsDataManagement": {
     "description": "Data management section title"
   },
-
   "settingsExportData": "Daten exportieren",
   "@settingsExportData": {
     "description": "Button to export user data"
   },
-
   "settingsImportData": "Daten importieren",
   "@settingsImportData": {
     "description": "Button to import user data"
   },
-
   "settingsDeleteData": "Alle Daten löschen",
   "@settingsDeleteData": {
     "description": "Button to delete all user data"
   },
-
   "settingsConfirmDelete": "Sind Sie sicher, dass Sie alle Daten löschen möchten? Diese Aktion kann nicht rückgängig gemacht werden.",
   "@settingsConfirmDelete": {
     "description": "Confirmation message for data deletion"
   },
-
   "settingsAbout": "Über",
   "@settingsAbout": {
     "description": "About section title"
   },
-
   "settingsVersion": "Version",
   "@settingsVersion": {
     "description": "App version label"
   },
-
   "minutesShort": "{count,plural, =1{1 Min.}other{{count} Min.}}",
   "@minutesShort": {
     "description": "Short form of minutes",
@@ -217,7 +177,6 @@
       }
     }
   },
-
   "hours": "{count,plural, =1{1 Stunde}other{{count} Stunden}}",
   "@hours": {
     "description": "Hours text with plural forms",
@@ -232,7 +191,6 @@
   "@noSkillsYet": {
     "description": "Message shown when no skills exist"
   },
-
   "skillRating": "Bewertung: {rating}/5",
   "@skillRating": {
     "description": "Display format for skill rating",
@@ -243,7 +201,6 @@
       }
     }
   },
-
   "skillStrainRange": "Belastungsbereich: {start} - {end}",
   "@skillStrainRange": {
     "description": "Display format for skill strain range",
@@ -258,7 +215,6 @@
       }
     }
   },
-
   "filterByTag": "Nach Tag filtern",
   "@filterByTag": {
     "description": "Label for tag filter"
@@ -267,12 +223,10 @@
   "@addTag": {
     "description": "Label for tag input field"
   },
-
   "strainRange": "Belastungsbereich",
   "@strainRange": {
     "description": "Label for strain range slider"
   },
-
   "strainRangeError": "Untere Grenze kann nicht größer als obere Grenze sein",
   "@strainRangeError": {
     "description": "Error message for invalid strain range"

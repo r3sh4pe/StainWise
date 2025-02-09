@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
 import '../../l10n/l10n.dart';
 import '../../models/symptom.dart';
 import '../../viewmodels/symptom_viewmodel.dart';
@@ -27,7 +28,8 @@ class _SymptomFormViewState extends State<SymptomFormView> {
   void initState() {
     super.initState();
     _nameController = TextEditingController(text: widget.symptom?.name);
-    _descriptionController = TextEditingController(text: widget.symptom?.description);
+    _descriptionController =
+        TextEditingController(text: widget.symptom?.description);
     if (widget.symptom != null) {
       _isActive = widget.symptom!.isActive;
       _strainLevel = widget.symptom?.getLatestStrainLevel() ?? 50;
@@ -46,19 +48,24 @@ class _SymptomFormViewState extends State<SymptomFormView> {
 
     final viewModel = context.read<SymptomViewModel>();
     final navigator = Navigator.of(context); // Capture Navigator before async
-    final scaffoldMessenger = ScaffoldMessenger.of(context); // Capture Messenger before async
+    final scaffoldMessenger =
+        ScaffoldMessenger.of(context); // Capture Messenger before async
 
     try {
       if (widget.symptom == null) {
         await viewModel.createSymptom(
           name: _nameController.text,
-          description: _descriptionController.text.isEmpty ? null : _descriptionController.text,
+          description: _descriptionController.text.isEmpty
+              ? null
+              : _descriptionController.text,
         );
       } else {
         await viewModel.updateSymptom(
           widget.symptom!,
           name: _nameController.text,
-          description: _descriptionController.text.isEmpty ? null : _descriptionController.text,
+          description: _descriptionController.text.isEmpty
+              ? null
+              : _descriptionController.text,
           isActive: _isActive,
         );
 
@@ -73,12 +80,12 @@ class _SymptomFormViewState extends State<SymptomFormView> {
     } catch (e) {
       if (mounted) {
         scaffoldMessenger.showSnackBar(
-          SnackBar(content: Text(viewModel.errorMessage ?? 'An error occurred')),
+          SnackBar(
+              content: Text(viewModel.errorMessage ?? 'An error occurred')),
         );
       }
     }
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -104,11 +111,13 @@ class _SymptomFormViewState extends State<SymptomFormView> {
                     content: const Text('This action cannot be undone.'),
                     actions: [
                       TextButton(
-                        onPressed: () => navigator.pop(false), // Use captured navigator
+                        onPressed: () => navigator.pop(false),
+                        // Use captured navigator
                         child: Text(l10n.cancel),
                       ),
                       TextButton(
-                        onPressed: () => navigator.pop(true), // Use captured navigator
+                        onPressed: () => navigator.pop(true),
+                        // Use captured navigator
                         child: const Text('Delete'),
                       ),
                     ],
@@ -122,7 +131,6 @@ class _SymptomFormViewState extends State<SymptomFormView> {
                   }
                 }
               },
-
             ),
         ],
       ),
@@ -162,7 +170,8 @@ class _SymptomFormViewState extends State<SymptomFormView> {
               ),
               const SizedBox(height: 16),
               Text(
-                'Current Strain Level: $_strainLevel', // TODO: Add to localizations
+                'Current Strain Level: $_strainLevel',
+                // TODO: Add to localizations
                 style: theme.textTheme.titleMedium,
               ),
               Slider(
@@ -171,7 +180,8 @@ class _SymptomFormViewState extends State<SymptomFormView> {
                 max: 100,
                 divisions: 100,
                 label: _strainLevel.toString(),
-                onChanged: (value) => setState(() => _strainLevel = value.round()),
+                onChanged: (value) =>
+                    setState(() => _strainLevel = value.round()),
               ),
             ],
             const SizedBox(height: 32),

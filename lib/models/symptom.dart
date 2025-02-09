@@ -89,9 +89,9 @@ class Symptom extends HiveObject {
 
   /// Gets strain entries for a specific date range
   List<MapEntry<DateTime, int>> getStrainEntriesForDateRange(
-      DateTime startDate,
-      DateTime endDate,
-      ) {
+    DateTime startDate,
+    DateTime endDate,
+  ) {
     final List<MapEntry<DateTime, int>> entries = [];
 
     for (var i = 0; i < strainTimestamps.length; i++) {
@@ -129,7 +129,8 @@ class Symptom extends HiveObject {
     if (strainLevels.isEmpty) {
       averageStrainLevel = 0;
     } else {
-      averageStrainLevel = strainLevels.reduce((a, b) => a + b) ~/ strainLevels.length;
+      averageStrainLevel =
+          strainLevels.reduce((a, b) => a + b) ~/ strainLevels.length;
     }
   }
 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
 import '../../l10n/l10n.dart';
 import '../../models/skill.dart';
 import '../../viewmodels/skill_viewmodel.dart';
@@ -30,7 +31,8 @@ class _SkillFormViewState extends State<SkillFormView> {
   void initState() {
     super.initState();
     _nameController = TextEditingController(text: widget.skill?.name);
-    _descriptionController = TextEditingController(text: widget.skill?.description);
+    _descriptionController =
+        TextEditingController(text: widget.skill?.description);
     _tagController = TextEditingController();
     if (widget.skill != null) {
       _isActive = widget.skill!.isActive;
@@ -68,7 +70,8 @@ class _SkillFormViewState extends State<SkillFormView> {
   Future<void> _saveSkill() async {
     if (!_formKey.currentState!.validate()) return;
     if (_strainLowerFence > _strainUpperFence) {
-      _showErrorDialog(context, 'Lower fence cannot be greater than upper fence');
+      _showErrorDialog(
+          context, 'Lower fence cannot be greater than upper fence');
       return;
     }
 
@@ -101,7 +104,8 @@ class _SkillFormViewState extends State<SkillFormView> {
       }
     } catch (e) {
       if (mounted) {
-        _showErrorDialog(context, viewModel.errorMessage ?? context.l10n.errorOccurred);
+        _showErrorDialog(
+            context, viewModel.errorMessage ?? context.l10n.errorOccurred);
       }
     }
   }
@@ -135,7 +139,8 @@ class _SkillFormViewState extends State<SkillFormView> {
       }
     } catch (e) {
       if (mounted) {
-        _showErrorDialog(context, viewModel.errorMessage ?? context.l10n.errorOccurred);
+        _showErrorDialog(
+            context, viewModel.errorMessage ?? context.l10n.errorOccurred);
       }
     }
   }
@@ -168,7 +173,9 @@ class _SkillFormViewState extends State<SkillFormView> {
                 labelText: l10n.skillName,
                 filled: true,
               ),
-              validator: (value) => (value == null || value.isEmpty) ? l10n.pleaseEnterName : null,
+              validator: (value) => (value == null || value.isEmpty)
+                  ? l10n.pleaseEnterName
+                  : null,
             ),
             const SizedBox(height: 16),
             TextFormField(
@@ -182,7 +189,8 @@ class _SkillFormViewState extends State<SkillFormView> {
             const SizedBox(height: 16),
             Text('Strain Range', style: theme.textTheme.titleMedium),
             RangeSlider(
-              values: RangeValues(_strainLowerFence.toDouble(), _strainUpperFence.toDouble()),
+              values: RangeValues(
+                  _strainLowerFence.toDouble(), _strainUpperFence.toDouble()),
               min: 0,
               max: 100,
               divisions: 100,
